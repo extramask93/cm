@@ -40,16 +40,16 @@ QMAKE_TARGET.arch = x86
 }
 }
 contains(QMAKE_TARGET.arch, x86_64) {
-CONFIG += PROCESSOR_x64
-message(PROCESSOR_x64)
+	CONFIG += PROCESSOR_x64
+	message(PROCESSOR_x64)
 } else {
-CONFIG += PROCESSOR_x86
-message(PROCESSOR_x86)
+	CONFIG += PROCESSOR_x86
+	message(PROCESSOR_x86)
 }
 CONFIG(debug, release|debug) {
-CONFIG += BUILD_DEBUG
-message(BUILD_DEBUG)
+	CONFIG += BUILD_DEBUG
+	message(BUILD_DEBUG)
 } else {
-CONFIG += BUILD_RELEASE
-message(BUILD_RELEASE)
+	CONFIG += BUILD_RELEASE
+	message(BUILD_RELEASE)
 }
