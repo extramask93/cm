@@ -8,7 +8,8 @@ SOURCES += source/models/client.cpp \
     source/controllers/master-controller.cpp
 HEADERS += source/cm-lib_global.h \
 source/models/client.h \
-    source/controllers/master-controller.h
+    source/controllers/master-controller.h \
+    source/controllers/navigation-controller.h
 !build_pass:message(cm-lib project dir : $${PWD})
 
 include(../qmake-target-platform.pri)

@@ -1,7 +1,13 @@
 import QtQuick 2.9
-
-Rectangle {
-    width: 400
-    height: 200
-    color : "#f4c842"
+import assets 1.0
+Item {
+    Rectangle {
+        anchors.fill: parent
+        Text {
+            id: name
+            anchors.centerIn: parent
+            text: qsTr("SplashView")
+        }
+        color : Style.colourBackground//"#f4c842"
+    }
 }

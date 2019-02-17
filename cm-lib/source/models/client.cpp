@@ -1,6 +1,6 @@
 #include "client.h"
 
 
-Client::Client()
+cm::models::Client::Client()
 {
 }
